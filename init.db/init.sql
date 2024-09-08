@@ -20,3 +20,5 @@ CREATE TABLE cybinschema.user_roles (
     roles_id INT REFERENCES cybinschema.roles(id) ON DELETE CASCADE,
     PRIMARY KEY (user_id, roles_id)
 );
+
+CREATE SEQUENCE cybinschema.users_seq;
